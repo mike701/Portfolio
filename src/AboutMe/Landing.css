@@ -1,0 +1,94 @@
+#projects {
+  /* background-color: black; */
+  background: linear-gradient(0.25turn, #553539, purple);
+  position: relative;
+  text-align: center;
+  overflow-y: scroll;
+}
+.details > div {
+  border-style: solid black;
+  border-radius: 15px;
+  border-width: 5px;
+  background-color: plum;
+  width: 50vw;
+  margin: 0 auto;
+}
+div > h1,
+a {
+  background: none;
+}
+div > p {
+  font-size: 2rem;
+  background: none;
+}
+h1 {
+  background: none;
+  text-shadow: 2px 2px black;
+}
+
+#Air:hover {
+  background-color: aqua;
+}
+
+#Travel:hover {
+  background-color: sandybrown;
+}
+
+#Resource:hover {
+  background-color: goldenrod;
+}
+/* .details {
+  display: grid;
+  width: 100vw;
+  /* grid-template-columns: 100%; */
+/* grid-template-columns: 50% 50%;
+}  */
+
+/* .details > div {
+   background-color: red;
+} */
+/* .details > img { */
+/* grid-column: 2 / 3; */
+/* width: 50vw; */
+/* } */
+/* img {
+  width: 100%;
+  height: 100%;
+} */
+/* #Air {
+  overflow-y: scroll;
+  height: 60vh;
+  background-color: blue;
+  background-image: url("/Users/michaelabebe/Practice/portfolio/portfolio-app/public/pexels-darius-krause-2931915.jpg");
+  opacity: 0.8;
+} */
+/* #Air > h2,
+p {
+  color: aliceblue;
+  background: none;
+  text-shadow: 2px 2px black;
+} */
+/* #Air:hover {
+  opacity: 1;
+  transform: scale(1.15);
+  z-index: 2;
+} */
+/* #Travel:hover {
+  opacity: 1;
+  transform: scale(1.15);
+  z-index: 2;
+} */
+/* #Travel {
+  overflow-y: scroll;
+  height: 60vh;
+  background-image: url("/Users/michaelabebe/Practice/portfolio/portfolio-app/public/pexels-nubia-navarro-(nubikini)-386009.jpg");
+  background-size: cover;
+  opacity: 0.8;
+} */
+/* #Travel > h1,
+p {
+  color: bisque;
+  font-style: oblique;
+  background: none;
+  text-shadow: 2px 2px black;
+} */
