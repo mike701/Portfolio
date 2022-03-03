@@ -1,0 +1,100 @@
+* {
+  color: white;
+  /* color: deeppink; */
+  /* background-color: white; */
+  /* background-color: blueviolet; */
+}
+.threeJS {
+  background-color: black;
+}
+nav,
+a {
+  background-color: black;
+}
+.App {
+  text-align: center;
+  /* background-color: blueviolet; */
+}
+
+img {
+  height: 70vh;
+  width: 30%;
+}
+
+#landing {
+  background-color: black;
+  display: grid;
+  /* grid-template-columns: 50% 50%; */
+  grid-template-rows: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+#About {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  /* width: 50vw;
+  left: 0vw; */
+}
+#landing > img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 100%;
+  width: 50vw;
+}
+#About > section {
+  margin: 0px auto;
+  font-size: 1.8rem;
+  max-width: 50vw;
+}
+@media screen and (max-width: 900px) {
+  #landing {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    width: 100vw;
+    height: 100vh;
+  }
+  #landing > img {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-template-rows: 2/3;
+  }
+  #About {
+    width: 100%;
+  }
+  #About > section {
+    font-size: 0.8rem;
+  }
+}
+/* @media screen and (max-width: 1440) {
+  img {
+    height: 70vh;
+    width: 40vw;
+  }
+} */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

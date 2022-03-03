@@ -1,0 +1,116 @@
+#svgBack {
+  /* background-color: #553539; */
+  background: linear-gradient(0.25turn, #553539, purple);
+  /* background-image: url("/public/Dev.svg"); */
+  /* height: 40vh; */
+}
+
+#svgBack > h1 {
+  background: none;
+  opacity: 1;
+  margin: 20px auto;
+  left: 30%;
+  position: absolute;
+  font-size: 4.8rem;
+  color: white;
+  z-index: 2;
+}
+svg {
+  margin: 0 auto;
+  opacity: 0.8;
+  width: 25%;
+  height: 50%;
+}
+/* #rfeet,
+#rshin {
+  animation: foottap 2s infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes foottap {
+  from {
+    transform: translateX(0) rotateZ(0deg);
+  }
+  to {
+    transform: translateX(-2px) rotateZ(10deg);
+  }
+} */
+
+@media screen and (max-width: 760px) {
+  #svgBack > h1 {
+    font-size: 1.8rem;
+  }
+  #svgBack {
+    height: 40vh;
+  }
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#Head {
+  animation: bobbing 1s infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes bobbing {
+  from {
+    transform: translateX(5%) rotateZ(7deg);
+  }
+  to {
+    transform: translateX(5%) rotateZ(-3deg);
+  }
+}
+
+#leftArm {
+  animation: tapping 1s infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#rightArm {
+  animation: tapping 2s infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes tapping {
+  from {
+    transform: translateX(5%) rotateZ(7deg);
+  }
+  to {
+    transform: rotateZ(-3deg);
+  }
+}
+
+#Ellipse90 {
+  opacity: 0;
+  animation: load 2s infinite alternate;
+  animation-delay: 2s;
+}
+#Ellipse91 {
+  opacity: 0;
+  animation: load 2s infinite alternate;
+  animation-delay: 2.4s;
+}
+#Ellipse92 {
+  opacity: 0;
+  animation: load 2s infinite alternate;
+  animation-delay: 2.8s;
+}
+@keyframes load {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#focused-Div {
+  opacity: 1;
+}
+#under_focused {
+  animation: load 5s infinite alternate;
+}
+#right_focused {
+  animation: load 10s infinite alternate;
+}
