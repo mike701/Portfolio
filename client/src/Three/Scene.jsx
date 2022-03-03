@@ -11,7 +11,7 @@ import { Physics } from '@react-three/cannon';
 export default function Scene() {
   function Box(props) {
     const meMap=useLoader(TextureLoader,'Me_graySuit.jpeg');
-    const [ref,api] = useBox(() => ({ mass: 1, position: [0, 2, 0] }));
+    const [api] = useBox(() => ({ mass: 1, position: [0, 2, 0] }));
     const [clicked, click] = useState(false);
     const mesh = useRef();
     return (
