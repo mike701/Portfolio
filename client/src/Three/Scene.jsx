@@ -1,8 +1,8 @@
-import React, { useEffect, useLayoutEffect } from 'react'
+import React, { useEffect} from 'react'
 import { Suspense } from 'react'
 import { Canvas} from "@react-three/fiber"
 import { useBox } from "@react-three/cannon";
-import { useFrame, useLoader } from "@react-three/fiber";
+import {  useLoader } from "@react-three/fiber";
 import { TextureLoader } from 'three';
 import {  PerspectiveCamera, OrbitControls, Text} from "@react-three/drei";
 import { useRef,useState } from 'react';
@@ -12,11 +12,8 @@ export default function Scene() {
   function Box(props) {
     const meMap=useLoader(TextureLoader,'Me_graySuit.jpeg');
     const [ref,api] = useBox(() => ({ mass: 1, position: [0, 2, 0] }));
-    const [hovered, setHover] = useState(false);
     const [clicked, click] = useState(false);
     const mesh = useRef();
-    // window.addEventListener('mousemove',setHover(true));
-    // useFrame((state, delta) => ((mesh.current.rotation.y += 0.01)))
     return (
       <mesh onClick={() => {
         api.velocity.set(0, 2, 0);
@@ -25,15 +22,12 @@ export default function Scene() {
      
       ref = { mesh} position = {[0, 0, 0]} >
       <boxBufferGeometry attach='geometry' args={clicked? [40,40,40]:[20,20,20]}/>
-      <meshStandardMaterial map={meMap} attach='material' color={hovered? "orange":"white"} />
+      <meshStandardMaterial map={meMap} attach='material'  />
     </mesh>)
   }
   function Scenery(props) {
-    const [clicked, click] = useState(false);
     const [zPosition, setZPosition] = useState(-90);
     useEffect(() => {
-    // if (hover) {
-      // console.log(props.hover)
         console.log(zPosition)
         if (zPosition > -500) {
           setTimeout(() => {
@@ -43,7 +37,6 @@ export default function Scene() {
         } else {
           setZPosition(-50);
         }
-      // }
       }, [zPosition])
     return (
       <>
