@@ -7,6 +7,12 @@
 .threeJS {
   background-color: black;
 }
+nav {
+  position: sticky;
+  top: 0vh;
+  z-index: 3;
+  text-shadow: 2px 2px black;
+}
 nav,
 a {
   background-color: black;
@@ -46,6 +52,38 @@ img {
   margin: 0px auto;
   font-size: 1.8rem;
   max-width: 50vw;
+}
+@media screen and (max-width: 360px) {
+  nav {
+    font-size: 20px;
+  }
+  section > h1 {
+    font-size: 0.8rem;
+  }
+  section > p {
+    font-size: 1rem;
+  }
+  #Air > h1 {
+    font-size: 1rem;
+  }
+  #Air > p {
+    font-size: 1.5rem;
+    overflow-wrap: break-word;
+  }
+  #Travel > h1 {
+    font-size: 1rem;
+  }
+  #Travel > p {
+    font-size: 1.5rem;
+    overflow-wrap: break-word;
+  }
+  #Resource > h1 {
+    font-size: 1rem;
+  }
+  #Resource > p {
+    font-size: 1.5rem;
+    overflow-wrap: break-word;
+  }
 }
 @media screen and (max-width: 900px) {
   #landing {

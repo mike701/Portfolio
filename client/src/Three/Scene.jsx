@@ -28,11 +28,11 @@ export default function Scene() {
   function Scenery(props) {
     const [zPosition, setZPosition] = useState(-90);
     useEffect(() => {
-        console.log(zPosition)
+        // console.log(zPosition)
         if (zPosition > -500) {
           setTimeout(() => {
             setZPosition((prev) => prev - 20);
-            console.log(zPosition);
+            // console.log(zPosition);
           }, [1000])
         } else {
           setZPosition(-50);
