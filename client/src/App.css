@@ -1,8 +1,5 @@
 * {
   color: white;
-  /* color: deeppink; */
-  /* background-color: white; */
-  /* background-color: blueviolet; */
 }
 .threeJS {
   background-color: black;
@@ -33,7 +30,7 @@ img {
   /* grid-template-columns: 50% 50%; */
   grid-template-rows: 100%;
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
 }
 
 #About {
@@ -55,7 +52,7 @@ img {
 }
 @media screen and (max-width: 760px) {
   nav {
-    font-size: 20px;
+    font-size: 1.8rem;
   }
   section > h1 {
     font-size: 0.8rem;
@@ -90,12 +87,17 @@ img {
     overflow-wrap: break-word;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000) {
+  * {
+    color: antiquewhite;
+  }
+}
+@media screen and (max-width: 1000px) {
   #landing {
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
   }
   #landing > img {
     width: 100%;
@@ -106,38 +108,8 @@ img {
   #About {
     width: 100%;
   }
+
   #About > section {
     font-size: 0.8rem;
-  }
-}
-/* @media screen and (max-width: 1440) {
-  img {
-    height: 70vh;
-    width: 40vw;
-  }
-} */
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  min-height: 100vh;
-  min-width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
