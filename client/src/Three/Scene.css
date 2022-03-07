@@ -1,0 +1,7 @@
+#Resume {
+  height: 100vh;
+  /* background-image: url("/public/pexels-space.jpeg"); */
+  background: linear-gradient(0.25turn, #553539, purple);
+  position: relative;
+  top: -5vh;
+}

@@ -4,6 +4,7 @@ import Layout from './Layout/Layout';
 import LandingPage from "./AboutMe/LandingPage"
 import Scene from './Three/Scene';
 import { Routes,Route } from 'react-router';
+import Icons from './Icons/Icons';
 function App() {
 
   
@@ -38,6 +39,7 @@ function App() {
             </div>
         <DeveloperAtWork />
         <LandingPage style={{position:"relative",top:"0vh"}}></LandingPage>
+            <Icons/>
         <Scene></Scene>
         </>} />
         </Routes>

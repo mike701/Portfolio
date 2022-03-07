@@ -48,7 +48,27 @@ svg {
     width: 100%;
   }
 }
-
+@media screen and (min-width: 1000px) {
+  #svgBack {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 50vh;
+  }
+  svg {
+    grid-column-start: 2;
+    width: 50%;
+    position: relative;
+    top: 25%;
+  }
+  #svgBack > h1 {
+    grid-column-start: 1;
+    width: 50%;
+    position: relative;
+    left: 0;
+    top: 25%;
+    word-wrap: normal;
+  }
+}
 #Head {
   animation: bobbing 1s infinite alternate;
   transform-origin: center;

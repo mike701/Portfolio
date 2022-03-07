@@ -1,4 +1,5 @@
-import React, { useEffect} from 'react'
+import React, { useEffect } from 'react'
+import './Scene.css'
 import { Suspense } from 'react'
 import { Canvas} from "@react-three/fiber"
 import { useBox } from "@react-three/cannon";
@@ -86,7 +87,7 @@ export default function Scene() {
     )
   }
   return (
-    <section id="Resume" style={{height:"100vh",backgroundImage: "url(pexels-space.jpeg)",position:"relative",top:"-5vh"}}>
+    <section id="Resume">
           <h1>Three-dimensional playground/ Star Wars Style Resume (scroll on my face)</h1>
         <Suspense fallback={<div>...Loading</div>}>
           <div style={{ height: "70vh", width: "90vw",backgroundColor:"black", margin:"0 auto"}}>

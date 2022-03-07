@@ -1,0 +1,12 @@
+.Skills {
+  /* background-color: black; */
+  background: linear-gradient(0.25turn, #553539, purple);
+}
+.Skills > h1 {
+  margin: 0 0;
+  font-size: 90px;
+}
+#IconContainer > img {
+  height: 20vh;
+  width: calc(100vw / 3);
+}
