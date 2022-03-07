@@ -10,3 +10,21 @@
   height: 20vh;
   width: calc(100vw / 3);
 }
+#IconContainer > #StyledComponents {
+  height: 20vh;
+  width: calc(100vw / 3);
+}
+
+#last {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+#last > img,
+#last > #StyledComponents > svg {
+  height: 20vh;
+  width: calc(100vw / 3);
+}
+#StyledComponents {
+  width: calc(100vw / 3);
+}
