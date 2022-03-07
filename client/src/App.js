@@ -19,7 +19,7 @@ function App() {
                   <h1>
                     Hello World!
                     <br/>
-                    Software Developer=&#123;
+                    Software Developer=&#123; 
                     <br/>name: "Michael Abebe"
                     <br />Technologies:[<br/>[HTML,CSS,JS],<br />
                     [MongoDB,Express,React,NodeJS],<br />

@@ -1,5 +1,6 @@
 * {
   color: white;
+  overflow-wrap: break-word;
 }
 .threeJS {
   background-color: black;
@@ -9,6 +10,7 @@ nav {
   top: 0vh;
   z-index: 3;
   text-shadow: 2px 2px black;
+  font-size: 1.8rem;
 }
 nav,
 a {
@@ -25,12 +27,11 @@ img {
 }
 
 #landing {
-  background-color: black;
+  background: linear-gradient(0.25turn, #553539, purple);
   display: grid;
-  /* grid-template-columns: 50% 50%; */
   grid-template-rows: 100%;
   width: 100vw;
-  height: 110vh;
+  height: 90vh;
 }
 
 #About {
@@ -42,23 +43,36 @@ img {
 #landing > img {
   grid-column-start: 2;
   grid-column-end: 3;
-  height: 100%;
-  width: 50vw;
+  height: 50vh;
+  width: 20vw;
+  border-radius: 65%;
 }
 #About > section {
   margin: 0px auto;
-  font-size: 1.8rem;
+  font-size: 1.25rem;
   max-width: 50vw;
 }
+
 @media screen and (max-width: 760px) {
   nav {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
   section > h1 {
-    font-size: 0.8rem;
+    font-size: 1.3rem;
   }
   section > p {
-    font-size: 1rem;
+    font-size: 1.4rem;
+  }
+  #landing {
+    background: linear-gradient(0.25turn, #553539, purple);
+    display: grid;
+    grid-template-rows: 100%;
+    width: 100vw;
+    height: 90vh;
+  }
+  #landing > img {
+    width: 200px;
+    height: 200px;
   }
   #Air,
   #Travel,
@@ -87,20 +101,41 @@ img {
     overflow-wrap: break-word;
   }
 }
-@media screen and (max-width: 1000) {
-  * {
-    color: antiquewhite;
+@media screen and (max-width: 700px) {
+  #landing {
+    background: linear-gradient(0.25turn, #553539, purple);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    width: 100vw;
+    height: 90vh;
+  }
+  #landing > img {
+    grid-row: 2/-1;
+    grid-column-start: 1;
+    margin: 50px auto;
+  }
+  #About {
+    grid-row: 1/2;
+    margin: 0 auto;
+  }
+  section > p,
+  section > h1 {
+    font-size: 0.9rem;
   }
 }
-@media screen and (max-width: 1000px) {
+
+@media screen and (min-width: 1000px) {
   #landing {
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
+    margin-bottom: 0.1px;
   }
   #landing > img {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-template-rows: 2/3;
@@ -111,5 +146,9 @@ img {
 
   #About > section {
     font-size: 0.8rem;
+    text-align: center;
+  }
+  nav {
+    font-size: 2.8rem;
   }
 }
