@@ -49,7 +49,7 @@ export default function Scene() {
       if (window.innerWidth < 800) { setFontSize(20) }
       if (window.innerWidth < 500) {setFontSize(10)}
       console.log(fontSize)
-    }, [zPosition])
+    }, [zPosition,fontSize])
     return (
       <>
         <PerspectiveCamera
@@ -91,7 +91,7 @@ export default function Scene() {
   return (
     <section id="Resume">
       <nav>
-        <a href='https://docs.google.com/document/d/1U_lvO9dACC9xyKm6FSMEVSNi_6oBgWeFR_ut8BGNzpk/edit?usp=sharing' target='_blank'>Resume Google Link</a>
+        <a href='https://docs.google.com/document/d/1U_lvO9dACC9xyKm6FSMEVSNi_6oBgWeFR_ut8BGNzpk/edit?usp=sharing' target='_blank' rel="noreferrer">Resume Google Link</a>
         </nav>
       <h1>Star Wars Style Resume</h1>
       <button style={{color:"black"}} onClick={(e) => { e.preventDefault(); setScroll((prev) => !prev); console.log(scroll)}}>Toggle animation vs scroll</button>
