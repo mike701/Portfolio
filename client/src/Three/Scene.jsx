@@ -27,6 +27,7 @@ export default function Scene() {
   }
   function Scenery(props) {
     const [zPosition, setZPosition] = useState(-90);
+    const [fontSize, setFontSize] = useState(40);
     useEffect(() => {
         // console.log(zPosition)
         if (zPosition > -500) {
@@ -37,7 +38,11 @@ export default function Scene() {
         } else {
           setZPosition(-50);
         }
-      }, [zPosition])
+      console.log(window.innerHeight, window.innerWidth)
+      if (window.innerWidth < 800) { setFontSize(20) }
+      if (window.innerWidth < 500) {setFontSize(10)}
+      console.log(fontSize)
+    }, [zPosition])
     return (
       <>
         <PerspectiveCamera
@@ -48,9 +53,8 @@ export default function Scene() {
           onUpdate={self => self.updateProjectionMatrix()}
         >
          
-          <OrbitControls>
-            {/* camera={[-2,-10,-40]} */}
-          </OrbitControls>
+          {/* <OrbitControls>
+          </OrbitControls> */}
           <ambientLight
             intensity={0.5} />
           <spotLight
@@ -63,18 +67,18 @@ export default function Scene() {
           onClick={() => {
             click(!clicked);
           }}> */}
-          <Text color="white" fontSize={20} position={[0, -25, 10]} rotation={[-Math.PI / 3, 0, 0]}>
-            Hello Future Employer (please scroll)
+          <Text color="white" fontSize={fontSize/2} position={[0, -25, 10]} rotation={[-Math.PI / 3, 0, 0]}>
+            Hello Future Employer
           </Text>
-          <Text color="white" fontSize={40} position={[0, -60, 30]} rotation={[
+          <Text color="white" fontSize={fontSize} position={[0, -60, 20]} rotation={[
             -Math.PI/3, 0, 0]}>Technologies</Text>
-          <Text color="white" fontSize={40} position={[0, -90, 70]} rotation={[
+          <Text color="white" fontSize={fontSize} position={[0, -90, 70]} rotation={[
             -Math.PI / 3, 0, 0]}>Front-End: HTML,CSS,JS,React</Text>
-            <Text color="white" fontSize={40} position={[0, -110, 120]} rotation={[
+            <Text color="white" fontSize={fontSize} position={[0, -110, 120]} rotation={[
             -Math.PI / 3, 0, 0]}>Back-End: Ruby on Rails, Python, NodeJS, Express</Text>
-            <Text color="white" fontSize={40} position={[0, -140, 170]} rotation={[
+            <Text color="white" fontSize={fontSize} position={[0, -140, 170]} rotation={[
             -Math.PI / 3, 0, 0]}>Database: MongoDb, PostGreSQL</Text>
-            <Text color="white" fontSize={40} position={[0, -190, 200]} rotation={[
+            <Text color="white" fontSize={fontSize} position={[0, -190, 200]} rotation={[
             -Math.PI / 3, 0, 0]}>Fin</Text>
           {/* </mesh> */}
         </PerspectiveCamera>
@@ -85,14 +89,12 @@ export default function Scene() {
     <section id="Resume" style={{height:"100vh",backgroundImage: "url(pexels-space.jpeg)",position:"relative",top:"-5vh"}}>
           <h1>Three-dimensional playground/ Star Wars Style Resume (scroll on my face)</h1>
         <Suspense fallback={<div>...Loading</div>}>
-          {/* <div style={{ display: "flex", flexWrap: "wrap",flexDirection:"column" }}> */}
           <div style={{ height: "70vh", width: "90vw",backgroundColor:"black", margin:"0 auto"}}>
           <Canvas style={{ backgroundImage: "url(pexels-space.jpeg)" }} >
                 <Scenery >
                 </Scenery>
                 </Canvas>
           </div>
-          {/* </div> */}
           </Suspense>
         </section>
   )

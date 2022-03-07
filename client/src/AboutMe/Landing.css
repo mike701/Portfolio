@@ -37,6 +37,9 @@ h1 {
 #Resource:hover {
   background-color: goldenrod;
 }
+#Forum:hover {
+  background-color: hotpink;
+}
 /* .details {
   display: grid;
   width: 100vw;

@@ -76,27 +76,20 @@ img {
   }
   #Air,
   #Travel,
-  #Resource {
+  #Resource,
+  #Forum {
     width: 100vw;
   }
-  #Air > h1 {
+  #Air > h1,
+  #Travel > h1,
+  #Resource > h1,
+  #Forum > h1 {
     font-size: 1rem;
   }
-  #Air > p {
-    font-size: 1.5rem;
-    overflow-wrap: break-word;
-  }
-  #Travel > h1 {
-    font-size: 1rem;
-  }
-  #Travel > p {
-    font-size: 1.5rem;
-    overflow-wrap: break-word;
-  }
-  #Resource > h1 {
-    font-size: 1rem;
-  }
-  #Resource > p {
+  #Air > p,
+  #Travel > p,
+  #Resource > p,
+  #Forum > p {
     font-size: 1.5rem;
     overflow-wrap: break-word;
   }
@@ -145,7 +138,7 @@ img {
   }
 
   #About > section {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     text-align: center;
   }
   nav {
