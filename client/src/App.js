@@ -39,7 +39,7 @@ function App() {
             </div>
         <DeveloperAtWork />
         <LandingPage style={{position:"relative",top:"0vh"}}></LandingPage>
-            <Icons/>
+        <Icons/>
         <Scene></Scene>
         </>} />
         </Routes>
