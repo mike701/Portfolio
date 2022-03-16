@@ -35,7 +35,14 @@ export default function LandingPage() {
           }}>
             <h1 >A-random-Quest</h1>
             <p>Tech Stacks:React,Styled-Components,Airtable</p>
-          </div>
+        </div>
+        {/* <div id="Hackathon" onClick={(e) => {
+          e.preventDefault();
+          window.open("https://elegant-lamport-79fb82.netlify.app/",'_blank')
+          }}>
+            <h1>Cleanly</h1>
+            <p>Tech Stacks:React,Ruby on Rails</p>
+          </div> */}
     </div>
 </div>);
 }

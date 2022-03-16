@@ -45,10 +45,10 @@ export default function Scene() {
         } else {
           setZPosition(-50);
         }
-      console.log(window.innerHeight, window.innerWidth)
+      // console.log(window.innerHeight, window.innerWidth)
       if (window.innerWidth < 800) { setFontSize(20) }
       if (window.innerWidth < 500) {setFontSize(10)}
-      console.log(fontSize)
+      // console.log(fontSize)
     }, [zPosition,fontSize])
     return (
       <>

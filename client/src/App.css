@@ -46,13 +46,45 @@ img {
   height: 50vh;
   width: 20vw;
   border-radius: 65%;
+  margin: 20px auto;
 }
 #About > section {
   margin: 0px auto;
-  font-size: 1.25rem;
+  font-size: 0.9rem;
   max-width: 50vw;
+  overflow-y: hidden;
+  animation-name: typing;
+  animation-duration: 2s;
+  animation-iteration-count: once;
 }
-
+/* #About > section :nth-child(1) {
+  animation-name: typedLine;
+  animation-duration: 15s;
+  animation-iteration-count: once;
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 200px;
+  height: 25%;
+  color: red;
+} */
+@keyframes typedLine {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    opacity: 0;
+    height: 20px;
+  }
+  to {
+    opacity: 1;
+    height: 100vh/3;
+  }
+}
 @media screen and (max-width: 760px) {
   nav {
     font-size: 1.2rem;
@@ -94,6 +126,7 @@ img {
     overflow-wrap: break-word;
   }
 }
+
 @media screen and (max-width: 700px) {
   #landing {
     background: linear-gradient(0.25turn, #553539, purple);
@@ -106,7 +139,7 @@ img {
   #landing > img {
     grid-row: 2/-1;
     grid-column-start: 1;
-    margin: 50px auto;
+    margin: 0px auto;
   }
   #About {
     grid-row: 1/2;
@@ -122,8 +155,23 @@ img {
   #landing {
     grid-template-rows: 100%;
     width: 100vw;
-    height: 60vh;
+    height: 65vh;
     margin-bottom: 0.1px;
+  }
+  #svgBack {
+    width: 100vw;
+  }
+  #projects {
+    width: 100vw;
+  }
+  .Skills {
+    width: 100vw;
+  }
+  #Resume {
+    width: 100vw;
+  }
+  nav {
+    width: 100vw;
   }
   #landing > img {
     width: 70%;
@@ -132,12 +180,32 @@ img {
   #About {
     width: 100%;
   }
-
   #About > section {
-    font-size: 1.2rem;
+    font-size: 0.8em;
     text-align: center;
+    height: 80%;
+    overflow-y: hidden;
+    animation-name: typing;
+    animation-duration: 2s;
+    animation-iteration-count: once;
   }
   nav {
     font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  #About > section > h1 {
+    font-size: 0.6rem;
+  }
+  #About > section > p {
+    font-size: 0.45rem;
+  }
+  #About > section {
+    margin: 0px auto;
+    /* max-width: 50vw; */
+    overflow-y: hidden;
+    animation-name: typing;
+    animation-duration: 20s;
+    animation-iteration-count: once;
   }
 }

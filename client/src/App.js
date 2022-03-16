@@ -16,10 +16,11 @@ function App() {
           <Route path="/" element={<>
             <div id="landing" >
               <div id='About' >
-                <section >
+                <section>
                   <h1>
                     Hello World!
-                    <br/>
+                    </h1>
+                  <h1>
                     Software Developer=&#123; 
                     <br/>name: "Michael Abebe"
                     <br />Technologies:[<br/>[HTML,CSS,JS],<br />
@@ -32,7 +33,7 @@ function App() {
                 <section>
                   <h1>Ways to conect with me:</h1>
                   <p>Email:michaelnabebe@gmail.com</p>
-                  <p>Linkedin:</p>
+                  <a href='https://www.linkedin.com/in/michaelabebe5/' target={'_blank'}> LinkedIn</a>
                 </section>
               </div>
               <img src='Me_graySuit.jpeg' alt='Michael Abebe in a gray Suit'></img>

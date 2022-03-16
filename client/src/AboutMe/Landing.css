@@ -40,6 +40,9 @@ h1 {
 #Forum:hover {
   background-color: hotpink;
 }
+#Hackathon:hover {
+  background-color: greenyellow;
+}
 /* .details {
   display: grid;
   width: 100vw;

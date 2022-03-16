@@ -62,7 +62,7 @@ svg {
   }
   #svgBack > h1 {
     grid-column-start: 1;
-    width: 50%;
+    /* width: 50%; */
     position: relative;
     left: 0;
     top: 25%;
