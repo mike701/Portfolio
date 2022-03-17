@@ -155,7 +155,7 @@ img {
   #landing {
     grid-template-rows: 100%;
     width: 100vw;
-    height: 65vh;
+    height: 100vh;
     margin-bottom: 0.1px;
   }
   #svgBack {
@@ -181,7 +181,7 @@ img {
     width: 100%;
   }
   #About > section {
-    font-size: 0.8em;
+    font-size: 1.4em;
     text-align: center;
     height: 80%;
     overflow-y: hidden;
