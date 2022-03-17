@@ -33,7 +33,7 @@ function App() {
                 <section>
                   <h1>Ways to conect with me:</h1>
                   <p>Email:michaelnabebe@gmail.com</p>
-                  <a href='https://www.linkedin.com/in/michaelabebe5/' target={'_blank'}> LinkedIn</a>
+                  <a href='https://www.linkedin.com/in/michaelabebe5/' target={'_blank'} rel="noreferrer"> LinkedIn</a>
                 </section>
               </div>
               <img src='Me_graySuit.jpeg' alt='Michael Abebe in a gray Suit'></img>
