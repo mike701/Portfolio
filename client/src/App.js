@@ -24,8 +24,8 @@ function App() {
                     Software Developer=&#123; 
                     <br/>name: "Michael Abebe"
                     <br />Technologies:[<br/>[HTML,CSS,JS],<br />
-                    [MongoDB,Express,React,NodeJS],<br />
-                    [Ruby on Rails,PostgreSQL]<br/>]
+                    <br /><br />[MongoDB,Express,React,NodeJS],<br />
+                    <br /><br />[Ruby on Rails,PostgreSQL]<br/>]
                     <br/> Current Location:"Maryland"
                     &#125;
                   </h1>
